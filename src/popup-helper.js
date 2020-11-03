@@ -7,7 +7,7 @@ const popup = {
             $("#popuptext").html(text);
             $("#popupbox").css({ "background-color": "rgba(210, 120, 241, 0.7)", "border": "3px solid #3ed1ef" });
             $("#popuptext").css({ "opacity": 0, "margin-left": "50px" });
-
+            
             const textWidth = $("#popuptext").width();
             $("#popupbox").width(1);
             $("#popupbox").animate({ width: textWidth + 30 }, 700);

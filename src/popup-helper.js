@@ -1,13 +1,11 @@
 const popup = {
     //Display the pop-up with text and random background-color/border
-    showText: (text, bgColour) => {
+    showText: (text) => {
         const random = Math.floor(Math.random() * Math.floor(3));
-        if(random === 0){
-            document.getElementById("popupbox").style.border = "3px solid #3ed1ef";
-            document.getElementById("popupbox").style.backgroundColor = "rgba(210, 120, 241, 0.7)";
+        if(random === 0){       
             $("#popupbox").show();
             $("#popuptext").html(text);
-            $("#popupbox").css({ "background-color": bgColour });
+            $("#popupbox").css({ "background-color": "rgba(210, 120, 241, 0.7)", "border": "3px solid #3ed1ef" });
             $("#popuptext").css({ "opacity": 0, "margin-left": "50px" });
 
             const textWidth = $("#popuptext").width();
@@ -16,11 +14,9 @@ const popup = {
             $("#popuptext").animate({ "opacity": 1, "margin-left": "15px" }, 900);
         }
         else if(random === 1){
-            document.getElementById("popupbox").style.border = "3px solid #3ed1ef";
-            document.getElementById("popupbox").style.backgroundColor = "rgba(161, 105, 243, 0.7)";
             $("#popupbox").show();
             $("#popuptext").html(text);
-            $("#popupbox").css({ "background-color": bgColour });
+            $("#popupbox").css({ "background-color": "rgba(161, 105, 243, 0.7)" , "border": "3px solid #3ed1ef"});
             $("#popuptext").css({ "opacity": 0, "margin-left": "50px" });
 
             const textWidth = $("#popuptext").width();
@@ -29,11 +25,9 @@ const popup = {
             $("#popuptext").animate({ "opacity": 1, "margin-left": "15px" }, 900);
         }
         else if(random === 2){
-            document.getElementById("popupbox").style.border = "3px solid #A169F3";
-            document.getElementById("popupbox").style.backgroundColor = "rgba(62, 209, 239, 0.7)";
             $("#popupbox").show();
             $("#popuptext").html(text);
-            $("#popupbox").css({ "background-color": bgColour });
+            $("#popupbox").css({ "background-color": "rgba(62, 209, 239, 0.7)", "border": "3px solid #A169F3"});
             $("#popuptext").css({ "opacity": 0, "margin-left": "50px" });
 
             const textWidth = $("#popuptext").width();

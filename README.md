@@ -18,6 +18,7 @@ The latest version of TwitchPopups can be found [as a zip archive here](https://
 4. Tick "Shutdown source when not visible" in browser source properties. That way, any tweaks you make are reloaded when you toggle the visibility button
 
 ## OPTIONS
-You can change everything you want, especially colors :
+You can change everything you want, especially colors and timer :
 1. Background-color, don't forget to put it in rgba version because of the opacity in the color
 2. Borders : the size (now 3px) and the color, even if it's solid or not, your choice
+3. The timer is in ms, so don't forget to convert
